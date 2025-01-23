@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 
 app = FastAPI(
   title="FastAPI do Zero",
@@ -6,9 +7,17 @@ app = FastAPI(
   description="API criada com FastAPI para fins didáticos"
 )
 
-@app.get("/")
+@app.get('/', response_class=HTMLResponse)
 async def root():
-  return {"message": "Hello World"}
+  return """
+    <html>
+      <head>
+        <title> Nosso olá mundo!</title>
+      </head>
+      <body>
+        <h1> Olá Mundo </h1>
+      </body>
+    </html>"""
 
 
 if __name__ == "__main__":
