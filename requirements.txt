@@ -5,3 +5,7 @@ pytest
 pytest-cov 
 taskipy 
 ruff
+pyjwt
+setuptools
+gunicorn
+httpx
