@@ -9,3 +9,9 @@ pyjwt
 setuptools
 gunicorn
 httpx
+isort
+pyflakes
+pycodestyle
+pylint
+flake8-pytest-style
+pydantic[email]

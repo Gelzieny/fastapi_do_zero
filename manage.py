@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
+from App.controller.user_controller import usuarios
 
 app = FastAPI(
   title="FastAPI do Zero",
@@ -7,17 +8,12 @@ app = FastAPI(
   description="API criada com FastAPI para fins didáticos"
 )
 
-@app.get('/', response_class=HTMLResponse)
-async def root():
-  return """
-    <html>
-      <head>
-        <title> Nosso olá mundo!</title>
-      </head>
-      <body>
-        <h1> Olá Mundo </h1>
-      </body>
-    </html>"""
+
+app.include_router(usuarios)
+
+@app.get("/apiname", include_in_schema=False, response_class=HTMLResponse)
+async def apiname() -> str:
+  return "FastAPI do Zero"
 
 
 if __name__ == "__main__":

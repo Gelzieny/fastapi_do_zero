@@ -11,6 +11,6 @@ from manage import app
 client = TestClient(app)
 
 def test_root():
-  response = client.get("/")
+  response = client.get("/apiname")
   assert response.status_code == HTTPStatus.OK
-  assert '<h1> Olá Mundo </h1>' in response.text
+  assert "FastAPI do Zero" in response.text
