@@ -9,6 +9,11 @@
 Este projeto utiliza o framework FastAPI para criar uma API robusta e eficiente. FastAPI é um framework web moderno para Python que oferece suporte nativo a tipagem, validação automática de dados e documentação interativa.
 
 ## Tecnologias Utilizadas
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=git, vscode, fastapi, postgres, python" />
+</a>
+
 - Python 11
 - FastAPI
 - Uvicorn
