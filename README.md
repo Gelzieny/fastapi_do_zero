@@ -18,23 +18,23 @@ Este projeto utiliza o framework FastAPI para criar uma API robusta e eficiente.
 ## Instalação
 
 1. Clone este repositório:
-   ```bash
-   git clone https://github.com/Gelzieny/fastapi-do-zero.git
-   cd fastapi-do-zero
-   ```
+  ```bash
+    git clone https://github.com/Gelzieny/fastapi-do-zero.git
+    cd fastapi-do-zero
+  ```
 
 2. Crie e ative um ambiente virtual:
   ```bash
-  # Linux/macOS
-  python -m venv venv && source venv/bin/activate && pip install -r requirements.txt 
+    # Linux/macOS
+    python -m venv venv && source venv/bin/activate && pip install -r requirements.txt 
 
-  # Windows
-  python -m venv venv && venv\Scripts\activate.bat && pip install -r requirements.txt     
+    # Windows
+    python -m venv venv && venv\Scripts\activate.bat && pip install -r requirements.txt     
   ```
 
 3. Instale as dependências:
   ```bash
-  pip install -r requirements.txt
+    pip install -r requirements.txt
   ```
 
 ## Executando o Projeto
@@ -63,6 +63,7 @@ seu-projeto/
 │── manage.py           # Ponto de entrada da API
 │── requirements.txt    # Dependências do projeto
 │── README.md           # Documentação do projeto
+│── LICENSE             # Arquivo contendo a license do projeto
 ```
 
 ## Executando Testes
@@ -74,8 +75,8 @@ Execute os testes com pytest:
 ## Docker (Opcional)
 Para executar o projeto com Docker:
 ```bash
-docker build -t fastapi-app .
-docker run -p 8000:8000 fastapi-app
+  docker build -t fastapi-app .
+  docker run -p 8000:8000 fastapi-app
 ```
 
 ## Contribuição
