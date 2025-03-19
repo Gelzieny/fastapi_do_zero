@@ -11,16 +11,9 @@ Este projeto utiliza o framework FastAPI para criar uma API robusta e eficiente.
 ## Tecnologias Utilizadas
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=git,vscode,fastapi,postgres,python" />
+  <img src="https://skillicons.dev/icons?i=git,vscode,fastapi,postgres,python,uvicorn" />
 </a>
 
-- Python 11
-- FastAPI
-- Uvicorn
-- Banco de dados (SQLite, PostgreSQL, ou outro)
-- Prisma (se aplicável)
-- Docker (se aplicável)
-- Pytest para testes automatizados
 
 ## Instalação
 
