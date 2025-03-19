@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    🔗 <img src="https://github.com/Gelzieny/fastapi-do-zero/blob/main/.github/img/fast-api.png?raw=true" />
+    🔗 <img src="https://github.com/Gelzieny/fastapi-do-zero/blob/main/.github/img/fast-api.png?raw=true" width="300" />
   </a>
 </p>
 
