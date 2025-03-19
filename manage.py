@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
+
 from App.controller.user_controller import usuarios
 
 app = FastAPI(
@@ -13,7 +14,7 @@ app.include_router(usuarios)
 
 @app.get("/apiname", include_in_schema=False, response_class=HTMLResponse)
 async def apiname() -> str:
-  return "FastAPI do Zero"
+  return "FastApi do Zero"
 
 
 if __name__ == "__main__":

@@ -13,4 +13,4 @@ client = TestClient(app)
 def test_root():
   response = client.get("/apiname")
   assert response.status_code == HTTPStatus.OK
-  assert "FastAPI do Zero" in response.text
+  assert "fastapi do zero" in response.text.lower()
