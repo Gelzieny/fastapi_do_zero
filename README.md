@@ -50,15 +50,17 @@ Este projeto utiliza o framework FastAPI para criar uma API robusta e eficiente.
 ## Estrutura do Projeto
 ```
 seu-projeto/
-│── src/
-│   ├── app.py          # Ponto de entrada da API
+│── App/
+│   ├── app.py          # 
 │   ├── models.py       # Modelos de dados
 │   ├── routes.py       # Definição das rotas
 │   ├── database.py     # Configuração do banco de dados
 │   ├── schemas.py      # Esquemas Pydantic
 │── tests/
 │   ├── test_main.py    # Testes automatizados
-│── .env                # Variáveis de ambiente
+│── .gitignore          # Listar arquivos e pastas que o Git deve ignorar
+│── .venv               # Variáveis de ambiente
+│── manage.py           # Ponto de entrada da API
 │── requirements.txt    # Dependências do projeto
 │── README.md           # Documentação do projeto
 ```
