@@ -11,7 +11,7 @@ Este projeto utiliza o framework FastAPI para criar uma API robusta e eficiente.
 ## Tecnologias Utilizadas
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=git, vscode, fastapi, postgres, python" />
+  <img src="https://skillicons.dev/icons?i=git,vscode,fastapi,postgres,python" />
 </a>
 
 - Python 11
