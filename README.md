@@ -27,9 +27,11 @@ Este projeto utiliza o framework FastAPI para criar uma API robusta e eficiente.
 
 2. Crie e ative um ambiente virtual:
   ```bash
-  python -m venv venv
-  source venv/bin/activate  # Linux/macOS
-  venv\Scripts\activate     # Windows
+  # Linux/macOS
+  python -m venv venv && source venv/bin/activate && pip install -r requirements.txt 
+
+  # Windows
+  python -m venv venv && venv\Scripts\activate.bat && pip install -r requirements.txt     
   ```
 
 3. Instale as dependências:
