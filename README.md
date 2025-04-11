@@ -8,6 +8,11 @@
 ## Descrição
 Este projeto utiliza o framework FastAPI para criar uma API robusta e eficiente. FastAPI é um framework web moderno para Python que oferece suporte nativo a tipagem, validação automática de dados e documentação interativa.
 
+## Documentação
+Documentação completa do FastAPI pode ser encontrada em [Dunossauro](https://fastapidozero.dunossauro.com/).
+
+Playlist de vídeos sobre FastAPI: [Curso de FastAPI](https://www.youtube.com/watch?v=QShMRcicxnE&list=PLOQgLBuj2-3IuFbt-wJw2p2NiV9WTRzIP&t=2s)
+
 ## Tecnologias Utilizadas
 
 <a href="https://skillicons.dev">
@@ -19,52 +24,28 @@ Este projeto utiliza o framework FastAPI para criar uma API robusta e eficiente.
 
 1. Clone este repositório:
   ```bash
-    git clone https://github.com/Gelzieny/fastapi-do-zero.git
+    git clone https://github.com/Gelzieny/fastapi_do_zero.git
     cd fastapi-do-zero
   ```
 
-2. Crie e ative um ambiente virtual:
+2. Ative o ambiente virtual com:
   ```bash
-    # Linux/macOS
-    python -m venv venv && source venv/bin/activate && pip install -r requirements.txt 
+    poetry env activate
 
-    # Windows
-    python -m venv venv && venv\Scripts\activate.bat && pip install -r requirements.txt     
+    # No Windows, o comando acima apenas exibe o caminho do ambiente virtual, então você precisa ativá-lo manualmente:
+
+    poetry env info --path
+
+    # Exemplo de saída:
+    C:\Users\SeuUsuario\AppData\Local\pypoetry\Cache\virtualenvs\nome-do-projeto-hash
+
+    # Com esse caminho em mãos, rode:
+    & "C:\Users\SeuUsuario\AppData\Local\pypoetry\Cache\virtualenvs\nome-do-projeto-hash\Scripts\Activate.ps1"
+
   ```
 
-3. Instale as dependências:
-  ```bash
-    pip install -r requirements.txt
-  ```
 
-## Executando o Projeto
-1. Inicie o servidor FastAPI com Uvicorn:
-  ```bash 
-    python manage.py
-  ```
-2. Acesse a documentação interativa no navegador:
-  
-  - [Swagger UI](http://127.0.0.1:5092/docs)
-  - [Redoc](http://127.0.0.1:5092/redoc)
 
-## Estrutura do Projeto
-```
-seu-projeto/
-│── App/
-│   ├── app.py          # 
-│   ├── models.py       # Modelos de dados
-│   ├── routes.py       # Definição das rotas
-│   ├── database.py     # Configuração do banco de dados
-│   ├── schemas.py      # Esquemas Pydantic
-│── tests/
-│   ├── test_main.py    # Testes automatizados
-│── .gitignore          # Listar arquivos e pastas que o Git deve ignorar
-│── .venv               # Variáveis de ambiente
-│── manage.py           # Ponto de entrada da API
-│── requirements.txt    # Dependências do projeto
-│── README.md           # Documentação do projeto
-│── LICENSE             # Arquivo contendo a license do projeto
-```
 
 ## Executando Testes
 Execute os testes com pytest:
